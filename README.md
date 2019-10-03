@@ -43,7 +43,15 @@ How this works in practice is best illustrated with an example.Let’s say we ha
 
 Less experienced object-oriented developers might decide to wrap all the business rules into an object very often referred to as OrderManager or OrderService. In these designs, Order, Customer, and Item are treated as little more than record types. All logic is factored out of the classes and tied together in one large, procedural method with a lot of internal if-then-else constructs. These methods are easily broken and are almost impossible to maintain. The reason? The encapsulation is broken. So, in the end, don’t break the encapsulation, and use the power of your programming language to maintain it.
 
+# Do Lots Of Deliberate Practice
 
+ 1. Deliberate practice is not simply performing a task . If you ask yourself, “Why am I performing this task?” and your answer is, “To complete the task,” then you’re not doing deliberate practice.
+
+ 2. You do deliberate practice to improve your ability to perform a task. It’s about skill and technique. Deliberate practice means repetition. It means performing the task with the aim of increasing your mastery of one or more aspects of the task. It means repeating the repetition. Slowly, over and over again, until you achieve your desired level of mastery. You do deliberate practice to master the task, not to complete the task.
+
+ 3. The key [to developing expertise] is deliberative practice: not just doing it again and again, but challenging yourself with a task that is just beyond your current ability, trying it, analyzing your performance while and after doing it, and correcting any mistakes.
+ 
+ 4. Deliberate practice does not mean doing what you are good at; it means challenging yourself, doing what you are not good at. So it’s not necessarily fun. Deliberate practice is about learning—learning that changes you, learning that changes your behavior.
 
 
 
