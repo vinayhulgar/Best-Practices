@@ -1,7 +1,7 @@
-# Best-Practices
+# :closed_book: Best-Practices
 Repo on some of the best practices
 
-# Continuous Learning:
+# :bulb: Continuous Learning:
 Here’s a list of ways to keep you learning. Many of these can be found on the Internet for free:
 
 • Read books, magazines, blogs, Twitter feeds, and websites. If you want to go deeper into a subject, consider joining a mailing list or newsgroup.
@@ -32,7 +32,7 @@ Whenever you make a mistake, fix a bug, or run into a problem, try to really und
 • Go back to school.
 
 
-# Encapsulate Behaviour, Not Just State:
+# :bulb: Encapsulate Behaviour, Not Just State:
 In systems theory , containment is one of the most useful constructs when dealing with large and complex system structures. In the software industry, the value of containment or encapsulation is well understood. Containment is supported by programming language constructs such as subroutines and functions, modules and packages, classes, and so on. Modules and packages address the larger-scale needs for encapsulation, while classes, subroutines, and functions address the more fine-grained aspects of the matter. Over the years, I have discovered that classes seem to be one of the hardest encapsulation constructs for developers to get right. It’s not uncommon to find a class with a single 3,000-line main method, or a class with only set and get methods for its primitive attributes. These examples demonstrate that the developers involved have not fully understood object-oriented thinking, having failed to take advantage of the power of objects as modeling constructs.
  
 For developers familiar with the terms POJO (Plain Old Java Object) and POCO (Plain Old C# Object or Plain Old CLR Object), this was the intent in going back to the basics of OO as a modeling paradigm—the objects are plain and simple, but not dumb.
@@ -43,7 +43,7 @@ How this works in practice is best illustrated with an example.Let’s say we ha
 
 Less experienced object-oriented developers might decide to wrap all the business rules into an object very often referred to as OrderManager or OrderService. In these designs, Order, Customer, and Item are treated as little more than record types. All logic is factored out of the classes and tied together in one large, procedural method with a lot of internal if-then-else constructs. These methods are easily broken and are almost impossible to maintain. The reason? The encapsulation is broken. So, in the end, don’t break the encapsulation, and use the power of your programming language to maintain it.
 
-# Do Lots Of Deliberate Practice
+# :bulb: Do Lots Of Deliberate Practice
 
  1. Deliberate practice is not simply performing a task . If you ask yourself, “Why am I performing this task?” and your answer is, “To complete the task,” then you’re not doing deliberate practice.
 
@@ -54,7 +54,7 @@ Less experienced object-oriented developers might decide to wrap all the busines
  4. Deliberate practice does not mean doing what you are good at; it means challenging yourself, doing what you are not good at. So it’s not necessarily fun. Deliberate practice is about learning—learning that changes you, learning that changes your behavior.
 
 
-# Don't Repeat Yourself
+# :bulb: Don't Repeat Yourself
 Of all the principles of programming , Don’t Repeat Yourself (DRY) is perhaps one of the most fundamental. The principle was formulated by Andy Hunt and Dave Thomas in The Pragmatic Programmer, and underlies many other well known software development best practices and design patterns. The developer who learns to recognize duplication, and understands how to eliminate it through appropriate practice and proper abstraction, can produce much cleaner code than one who continuously infects the application with unnecessary repetition.
 
 1. Duplication Is Waste: Every line of code that goes into an application must be maintained, and is a potential source of future bugs. Duplication needlessly bloats the code base, resulting in more opportunities for bugs and adding accidental complexity to the system. The bloat that duplication adds to the system also makes it more difficult for developers working with the system to fully understand the entire system, or to be certain that changes made in one location do not also need to be made in other places that duplicate the logic they are working on. DRY requires that “every piece of knowledge must have a single, unambiguous, authoritative representation within a system.”
@@ -66,12 +66,12 @@ Of all the principles of programming , Don’t Repeat Yourself (DRY) is perhaps 
 4. A Matter of Principle: Other software principles are also related to DRY. The Once and Only Once principle, which applies only to the functional behavior of code, can be thought of as a subset of DRY. The Open/Closed Principle, which states that “software entities should be open for extension, but closed for modification,” only works in practice when DRY is followed. Likewise, the well-known Single Responsibility Principle, which requires that a class have “only one reason to change,” relies on DRY. When followed with regard to structure, logic, process, and function, the DRY principle provides fundamental guidance to software developers and aids the creation of simpler, more maintainable, higher-quality applications. While there are scenarios where repetition can be necessary to meet performance or other requirements (e.g., data denormalization in a database), it should be used only where it directly addresses an actual rather than an imagined problem.
 
 
-# Don't Rely On Magic Happens Here
+# :bulb: Don't Rely On Magic Happens Here
 On any project, there are likely many things that an individual programmer doesn’t get actively involved in: eliciting requirements from users, getting budgets approved, setting up the build server, deploying the application to QA and production environments, migrating the business from the old processes or programs, etc.
 When you aren’t actively involved in things, there is an unconscious tendency to assume that they are simple and happen “by magic.” While the magic continues to happen, all is well. But when—it is usually “when” and not “if”—the magic stops, the project is in trouble
 
 
-# Don't Ignore That Error
+# :bulb: Don't Ignore That Error
 No matter how unlikely you think an error is in your code, you should always check for it, and always handle it. Every time. You’re not saving time if you don’t; you’re storing up potential problems for the future.
 We report errors in our code in a number of ways, including:
 
@@ -92,11 +92,11 @@ software systems.
 • Poor structure. If there are errors from your code that are tedious to deal with continually, you probably have a poor interface. Express it so that the errors are less intrusive and their handling is less onerous.
 
 
-# Don't Be Cute With Your Test Data
+# :bulb: Don't Be Cute With Your Test Data
 When writing any text in your code—whether comments, logging, dialogs, or test data—always ask yourself how it will look if it becomes public. It will save some red faces all around
 
 
-# Don't Be Afraid To Break The Things
+# :bulb: Don't Be Afraid To Break The Things
 Redefine internal interfaces
 Restructure modules
 Refactor copy–pasted code
@@ -111,17 +111,17 @@ Keep a “hygiene” list of tasks that the team feels are worthwhile for the ge
 will reduce expenses and expedite future releases. Never stop caring about the general “health” of the code.
 
 
-# Distinguish Business Exceptions From technical
+# :bulb: Distinguish Business Exceptions From technical
 Mixing technical exceptions and business exceptions in the same hierarchy blurs the distinction and confuses the caller about what the method contract is, what conditions it is required to ensure before calling, and what situations it is supposed to handle.
  
 Separating the cases gives clarity and increases the chances that technical exceptions will be handled by some application framework, while the business domain exceptions actually are considered and handled by the client code.
 
 
-# Deploy Early And Often.
+# :bulb: Deploy Early And Often.
 The installation/deployment process is essential to the productivity of your customers or your professional services team, so you should be testing and refactoring this process as you go. We test and refactor the source code throughout a project. The deployment deserves no less.
 
 
-# Convenience Is Not An Ility
+# :bulb: Convenience Is Not An Ility
 An API should provide an expressive language, which gives the next layer above sufficient vocabulary to ask and answer useful questions.
 
 This does not imply that it should provide exactly one method, or verb, for each question that may be worth asking. A diverse vocabulary allows us to express subtleties in meaning.
@@ -129,12 +129,12 @@ For example, we prefer to say run instead of walk(true), even though it could be
 A consistent and well-thought-out API vocabulary makes for expressive and easy-to-understand code in the next layer up. More importantly, a compo-sable vocabulary allows other programmers to use the API in ways you may not have anticipated—a great convenience indeed for the users of the API!
 
 
-# Code Is Design
+# :bulb: Code Is Design
 Software designs need to be validated with simulations equates to automated testing.
 Brutal Battery of tests
 
 
-# Comment Only What The Code Cannot Say
+# :bulb: Comment Only What The Code Cannot Say
 What of comments that are not technically wrong, but add no value to the code? Such comments are noise.
 Comments that parrot the code offer nothing extra to the reader—stating something once in code and again in natural language does not make it any truer or more real.
 Commented-out code is not executable code, so it has no useful effect for either reader or runtime.
@@ -153,13 +153,13 @@ Instead of commenting sections in long functions, extract smaller functions whos
 Try to express as much as possible through code. Any shortfall between what you can express in code and what you would like to express in total becomes a plausible candidate for a useful comment. Comment what the code cannot say, not simply what it does not say.
 
 
-# A Comment On Comments
+# :bulb: A Comment On Comments
 Make sure that your comments clarify your code but do not obscure it.
 Sprinkle your code with relevant comments explaining what the code is supposed to accomplish.
 Your header comments should give any programmer enough information to use your code without having to read it, while your inline comments should assist the next developer in fixing or extending it.
 
 
-# Coding With Reason
+# :bulb: Coding With Reason
 Avoid using goto statements, as they make remote sections highly interdependent.
 Avoid using modifiable global variables, as they make all sections that use them dependent.
 Each variable should have the smallest possible scope. For example, a local object can be declared right before its first usage.
@@ -173,14 +173,14 @@ More generally, each unit of code, from a block to a library, should have a narr
 In order to preserve class invariants, usage of setters should be discouraged. Setters tend to allow invariants that govern an object’s state to be broken.
 
 
-# Feynman Technique of learning
+# :bulb: Feynman Technique of learning
 Choose a Concept
 Teach it to a toddler
 Identify the gaps and go back to the source material
 Review and simplify
 
 
-# 6 Tips to Become Senior Developer
+# :bulb: 6 Tips to Become Senior Developer
 Develop quickly - Write Correct Code
 Tip 1: Code Katas
 Tip 2: Keyboard
@@ -191,10 +191,10 @@ Teach Others and Help Others
 Tip 5: Inspire people by expressing ideas clearly
 Tip 6: Share what you already know.
 
-# To Learn any code base
+# :bulb: To Learn any code base
 Best Way to Learn  New Things is get involve in Code Reviews.
 
-# Code Improve
+# :bulb: Code Improve
 Be Declarative.
 Promote Immutability.
 Avoid Side Effects.
@@ -202,7 +202,7 @@ Prefer expressions over  Statements.
 Design with Higher order functions.
 
 
-# 12 Ways To Make Code Suck Less
+# :bulb: 12 Ways To Make Code Suck Less
 Reduce State & State Mutation
 Do Tactical Code Reviews
 Give Good MeaningFul Names
@@ -217,28 +217,28 @@ Favor High Cohesion
 Schedule Time to Lower Technical Debt.
 
 
-# Technical Debt
+# :bulb: Technical Debt
 Track technical debt and pay it back quickly.
 Write a task card or log it in issue tracking system.
 
 
-# Functional Progamming
+# :bulb: Functional Progamming
 Astute test driven design
 Mock roles not objects
 
 
-# Watch Users
+# :bulb: Watch Users
 Ask what would the user do? (You are not the user)
 Don't Assume
 
 
-# Automate Your Coding Standards
+# :bulb: Automate Your Coding Standards
 Make sure code formatting is part of build process.
 Use static code analysis tools to find specific anti patterns.
 Do not only measure test coverage, but automatically check the results.
 
 
-# Beauty is in Simplicity
+# :bulb: Beauty is in Simplicity
 Readability
 Maintainability
 Speed of Development
@@ -247,47 +247,47 @@ No matter How complex the total application or system is, the individual parts h
 Simple objects with a single responsibility containing similarly simple, focused methods with descriptive names
 
 
-# Before You Refactor
-Start by taking stock of existing code base.
-Avoid the temptation of rewriting everything
-Many incremental changes are better than one massive change.
-After each development iteration, ensure the existing tests pass.
-Personal preferences & ego should't get in way.
-New Technology is insufficient reason to refactor.
+# :bulb: Before You Refactor
+:seedling: Start by taking stock of existing code base.
+:seedling: Avoid the temptation of rewriting everything
+:seedling: Many incremental changes are better than one massive change.
+:seedling: After each development iteration, ensure the existing tests pass.
+:seedling: Personal preferences & ego should't get in way.
+:seedling: New Technology is insufficient reason to refactor.
 
 
-# Beware the Share
+# :bulb: Beware the Share
 Check your Context Only then proceed.
 
-# Boy Scout Rule
-Always check a module in cleaner than when you checked it out.
-Any code you add to the module must be clean.
-Improve name of the variable
-Split One long function into smaller functions.
-Break Circular dependency
-Add an interface to decouple policy from detail.
+# :bulb: Boy Scout Rule
+:snowflake: Always check a module in cleaner than when you checked it out.
+:snowflake: Any code you add to the module must be clean.
+:snowflake: Improve name of the variable
+:snowflake: Split One long function into smaller functions.
+:snowflake: Break Circular dependency
+:snowflake: Add an interface to decouple policy from detail.
 
 
-# Check Your Code First Before Looking to blame others
-Isolate the problem
-Stub out calls
-Surround it with tests
-check calling conventions, shared libraries & version numbers
-Explain it to someone else
-look out for stack corruption & variable type mismatch
-try code on different machines, different build configurations
-Question your own assumptions & assumptions of others.
+# :bulb: Check Your Code First Before Looking to blame others
+:zap: Isolate the problem
+:zap: Stub out calls
+:zap: Surround it with tests
+:zap: check calling conventions, shared libraries & version numbers
+:zap: Explain it to someone else
+:zap: look out for stack corruption & variable type mismatch
+:zap: try code on different machines, different build configurations
+:zap: Question your own assumptions & assumptions of others.
 
 
-# Choose Your Tools With Care
+# :bulb: Choose Your Tools With Care
 Start small by using only the tools which are absolutely necessary.
 
-# Code In the launguage of the domain
-Add domian concepts explicit in the code.
+# :bulb: Code In the launguage of the domain
+:straight_ruler: Add domian concepts explicit in the code.
 
 
-# Code Layout Matters
-Optimizing to where to make change
-Easy to scan - observe conventions about how to lay out the parts of a class within a compilation unit: constants, fields, public methods, private methods
-Expressive layout - Find the right names so that your code express as clearly as possible 
-Compact Format
+# :bulb: Code Layout Matters
+:pencil2: Optimizing to where to make change
+:pencil2: Easy to scan - observe conventions about how to lay out the parts of a class within a compilation unit: constants, fields, public methods, private methods
+:pencil2: Expressive layout - Find the right names so that your code express as clearly as possible 
+:pencil2: Compact Format
