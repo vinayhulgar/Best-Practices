@@ -2,34 +2,35 @@
 Repo on some of the best practices
 
 # :bulb: Continuous Learning:
-Here’s a list of ways to keep you learning. Many of these can be found on the Internet for free:
+Here’s a list of ways to keep you learning. Many of these can be found on the Internet for free:<br />
 
-• Read books, magazines, blogs, Twitter feeds, and websites. If you want to go deeper into a subject, consider joining a mailing list or newsgroup.
+:chestnut: Read books, magazines, blogs, Twitter feeds, and websites. If you want to go deeper into a subject, consider joining a mailing list or newsgroup.<br />
 
-• If you really want to get immersed in a technology, get hands on—write some code.
+:chestnut: If you really want to get immersed in a technology, get hands on—write some code.<br />
 
-• Always try to work with a mentor, as being the top guy can hinder your education. Although you can learn something from anybody, you can learn a whole lot more from someone smarter or more experienced than you. If you can’t find a mentor, consider moving on.
+:chestnut: Always try to work with a mentor, as being the top guy can hinder your education. Although you can learn something from anybody, you can learn a whole lot more from someone smarter or more experienced than you. If you can’t find a mentor, consider moving on.<br />
 
-• Use virtual mentors. Find authors and developers on the Web who you really like and read everything they write. Subscribe to their blogs.
+:chestnut: Use virtual mentors. Find authors and developers on the Web who you really like and read everything they write. Subscribe to their blogs.<br />
 
-• Get to know the frameworks and libraries you use. Knowing how something works makes you know how to use it better. If they’re open source, you’re really in luck. Use the debugger to step through the code to see what’s going on under the hood. You’ll get to see code written and reviewed by some really smart people.
-Whenever you make a mistake, fix a bug, or run into a problem, try to really understand what happened. It’s likely that someone else ran into the same problem and posted it on the Web. Google is really useful here.
+:chestnut: Get to know the frameworks and libraries you use. Knowing how something works makes you know how to use it better. If they’re open source, you’re really in luck. Use the debugger to step through the code to see what’s going on under the hood. You’ll get to see code written and reviewed by some really smart people.<br />
 
-• A good way to learn something is to teach or speak about it. When people are going to listen to you and ask you questions, you’ll be highly motivated to learn. Try a lunch-’n’-learn at work, a user group, or a local conference.
+:chestnut: Whenever you make a mistake, fix a bug, or run into a problem, try to really understand what happened. It’s likely that someone else ran into the same problem and posted it on the Web. Google is really useful here.<br />
 
-• Join or start a study group (à la patterns community) or a local user group for a language, technology, or discipline you are interested in.
+:chestnut: A good way to learn something is to teach or speak about it. When people are going to listen to you and ask you questions, you’ll be highly motivated to learn. Try a lunch-’n’-learn at work, a user group, or a local conference.<br />
 
-• Go to conferences. And if you can’t go, many conferences put their talks online for free.
+:chestnut: Join or start a study group (à la patterns community) or a local user group for a language, technology, or discipline you are interested in.<br />
 
-• Long commute? Listen to podcasts.
+:chestnut: Go to conferences. And if you can’t go, many conferences put their talks online for free.<br />
 
-• Ever run a static analysis tool over the codebase or look at the warnings in your IDE? Understand what they’re reporting and why.
+:chestnut: Long commute? Listen to podcasts.<br />
 
-• Follow the advice of the Pragmatic Programmers* and learn a new language every year. At least learn a new technology or tool. Branching out gives you new ideas you can use in your current technology stack.
+:chestnut: Ever run a static analysis tool over the codebase or look at the warnings in your IDE? Understand what they’re reporting and why.<br />
 
-• Not everything you learn has to be about technology. Learn the domain you’re working in so you can better understand the requirements and help solve the business problem. Learning how to be more productive — how to work better — is another good option.
+:chestnut: Follow the advice of the Pragmatic Programmers* and learn a new language every year. At least learn a new technology or tool. Branching out gives you new ideas you can use in your current technology stack.<br />
 
-• Go back to school.
+:chestnut: Not everything you learn has to be about technology. Learn the domain you’re working in so you can better understand the requirements and help solve the business problem. Learning how to be more productive — how to work better — is another good option.<br />
+
+:chestnut: Go back to school.<br />
 
 
 # :bulb: Encapsulate Behaviour, Not Just State:
@@ -121,7 +122,7 @@ Separating the cases gives clarity and increases the chances that technical exce
 The installation/deployment process is essential to the productivity of your customers or your professional services team, so you should be testing and refactoring this process as you go. We test and refactor the source code throughout a project. The deployment deserves no less.
 
 
-# :bulb: Convenience Is Not An Ility
+# :bulb: Convenience Is Not An Ility<br />
 An API should provide an expressive language, which gives the next layer above sufficient vocabulary to ask and answer useful questions.
 
 This does not imply that it should provide exactly one method, or verb, for each question that may be worth asking. A diverse vocabulary allows us to express subtleties in meaning.
@@ -130,164 +131,164 @@ A consistent and well-thought-out API vocabulary makes for expressive and easy-t
 
 
 # :bulb: Code Is Design
-Software designs need to be validated with simulations equates to automated testing.
-Brutal Battery of tests
+Software designs need to be validated with simulations equates to automated testing.<br />
+Brutal Battery of tests<br />
 
 
-# :bulb: Comment Only What The Code Cannot Say
+# :bulb: Comment Only What The Code Cannot Say<br />
 What of comments that are not technically wrong, but add no value to the code? Such comments are noise.
-Comments that parrot the code offer nothing extra to the reader—stating something once in code and again in natural language does not make it any truer or more real.
+Comments that parrot the code offer nothing extra to the reader—stating something once in code and again in natural language does not make it any truer or more real.<br />
 Commented-out code is not executable code, so it has no useful effect for either reader or runtime.
-It also becomes stale very quickly.
-Version-related comments and commented-out code try to address questions of versioning and history. 
-A prevalence of noisy comments and incorrect comments in a codebase encourages programmers to ignore all comments, either by skipping past them or by taking active measures to hide them.
+It also becomes stale very quickly.<br />
+Version-related comments and commented-out code try to address questions of versioning and history.<br /> 
+A prevalence of noisy comments and incorrect comments in a codebase encourages programmers to ignore all comments, either by skipping past them or by taking active measures to hide them.<br />
 Programmers are resourceful and will route around anything perceived to be damage: folding comments
 up; switching coloring scheme so that comments and the background are the
-same color; scripting to filter out comments.
+same color; scripting to filter out comments.<br />
 To save a codebase from such misapplications of programmer ingenuity, and to reduce the risk of overlooking
-any comments of genuine value, comments should be treated as though they were code. Each comment should add some value for the reader, otherwise it is waste that should be removed or rewritten.
-What then qualifies as value? Comments should say something code does not and cannot say.
-A comment explaining what a piece of code should already say is an invitation to change code structure or coding conventions so the code speaks for itself.
-Instead of compensating for poor method or class names, rename them.
-Instead of commenting sections in long functions, extract smaller functions whose names capture the former sections’ intent.
-Try to express as much as possible through code. Any shortfall between what you can express in code and what you would like to express in total becomes a plausible candidate for a useful comment. Comment what the code cannot say, not simply what it does not say.
+any comments of genuine value, comments should be treated as though they were code. Each comment should add some value for the reader, otherwise it is waste that should be removed or rewritten.<br />
+What then qualifies as value? Comments should say something code does not and cannot say.<br />
+A comment explaining what a piece of code should already say is an invitation to change code structure or coding conventions so the code speaks for itself.<br />
+Instead of compensating for poor method or class names, rename them.<br />
+Instead of commenting sections in long functions, extract smaller functions whose names capture the former sections’ intent.<br />
+Try to express as much as possible through code. Any shortfall between what you can express in code and what you would like to express in total becomes a plausible candidate for a useful comment. Comment what the code cannot say, not simply what it does not say.<br />
 
 
-# :bulb: A Comment On Comments
-Make sure that your comments clarify your code but do not obscure it.
-Sprinkle your code with relevant comments explaining what the code is supposed to accomplish.
-Your header comments should give any programmer enough information to use your code without having to read it, while your inline comments should assist the next developer in fixing or extending it.
+# :bulb: A Comment On Comments<br />
+Make sure that your comments clarify your code but do not obscure it.<br />
+Sprinkle your code with relevant comments explaining what the code is supposed to accomplish.<br />
+Your header comments should give any programmer enough information to use your code without having to read it, while your inline comments should assist the next developer in fixing or extending it.<br />
 
 
-# :bulb: Coding With Reason
-Avoid using goto statements, as they make remote sections highly interdependent.
-Avoid using modifiable global variables, as they make all sections that use them dependent.
+# :bulb: Coding With Reason<br />
+Avoid using goto statements, as they make remote sections highly interdependent.<br />
+Avoid using modifiable global variables, as they make all sections that use them dependent.<br />
 Each variable should have the smallest possible scope. For example, a local object can be declared right before its first usage.
-Make objects immutable whenever relevant.
-Make the code readable by using spacing, both horizontal and vertical—e.g.,aligning related structures and using an empty line to separate two sections.
+Make objects immutable whenever relevant.<br />
+Make the code readable by using spacing, both horizontal and vertical—e.g.,aligning related structures and using an empty line to separate two sections.<br />
 Make the code self-documenting by choosing descriptive (but relatively short) names for objects, types, functions, etc.
-If you need a nested section, make it a function.
-Make your functions short and focused on a single task. The old 24-line limit still applies. Although screen size and resolution have changed, nothing has changed in human cognition since the 1960s.
-Functions should have few parameters (four is a good upper bound). This does not restrict the data communicated to functions: grouping related parameters into a single object localizes object invariants, which simplifies reasoning with respect to their coherence and consistency.
-More generally, each unit of code, from a block to a library, should have a narrow interface. Less communication reduces the reasoning required. This means that getters that return internal state are a liability—don’t ask an object for information to work with. Instead, ask the object to do the work with the information it already has. In other words, encapsulation is all—and only—about narrow interfaces.
-In order to preserve class invariants, usage of setters should be discouraged. Setters tend to allow invariants that govern an object’s state to be broken.
+If you need a nested section, make it a function.<br />
+Make your functions short and focused on a single task. The old 24-line limit still applies. Although screen size and resolution have changed, nothing has changed in human cognition since the 1960s.<br />
+Functions should have few parameters (four is a good upper bound). This does not restrict the data communicated to functions: grouping related parameters into a single object localizes object invariants, which simplifies reasoning with respect to their coherence and consistency.<br />
+More generally, each unit of code, from a block to a library, should have a narrow interface. Less communication reduces the reasoning required. This means that getters that return internal state are a liability—don’t ask an object for information to work with. Instead, ask the object to do the work with the information it already has. In other words, encapsulation is all—and only—about narrow interfaces.<br />
+In order to preserve class invariants, usage of setters should be discouraged. Setters tend to allow invariants that govern an object’s state to be broken.<br />
 
 
-# :bulb: Feynman Technique of learning
-Choose a Concept
-Teach it to a toddler
-Identify the gaps and go back to the source material
-Review and simplify
+# :bulb: Feynman Technique of learning<br />
+Choose a Concept<br />
+Teach it to a toddler<br />
+Identify the gaps and go back to the source material<br />
+Review and simplify<br />
 
 
-# :bulb: 6 Tips to Become Senior Developer
-Develop quickly - Write Correct Code
-Tip 1: Code Katas
-Tip 2: Keyboard
-Find the ideal Solution
-Tip 3: have an algorithm and practice it
-Tip 4: Approach Code Problem with a method
-Teach Others and Help Others
-Tip 5: Inspire people by expressing ideas clearly
-Tip 6: Share what you already know.
+# :bulb: 6 Tips to Become Senior Developer<br />
+Develop quickly - Write Correct Code<br />
+Tip 1: Code Katas<br />
+Tip 2: Keyboard<br />
+Find the ideal Solution<br />
+Tip 3: have an algorithm and practice it<br />
+Tip 4: Approach Code Problem with a method<br />
+Teach Others and Help Others<br />
+Tip 5: Inspire people by expressing ideas clearly<br />
+Tip 6: Share what you already know.<br />
 
-# :bulb: To Learn any code base
+# :bulb: To Learn any code base<br />
 Best Way to Learn  New Things is get involve in Code Reviews.
 
-# :bulb: Code Improve
-Be Declarative.
-Promote Immutability.
-Avoid Side Effects.
-Prefer expressions over  Statements.
-Design with Higher order functions.
+# :bulb: Code Improve<br />
+Be Declarative.<br />
+Promote Immutability.<br />
+Avoid Side Effects.<br />
+Prefer expressions over  Statements.<br />
+Design with Higher order functions.<br />
 
 
-# :bulb: 12 Ways To Make Code Suck Less
-Reduce State & State Mutation
-Do Tactical Code Reviews
-Give Good MeaningFul Names
-Avoid Long Methods - Apply SLAP
-Comment Why, not What
-Apply Zinsser's Principle on Writing.
-Prefer Clear Code Over Clever Code.
-Avoid Primitive Obsession.
-Program with Intention.
-Favor Loose Coupling
-Favor High Cohesion
-Schedule Time to Lower Technical Debt.
+# :bulb: 12 Ways To Make Code Suck Less<br />
+Reduce State & State Mutation<br />
+Do Tactical Code Reviews<br />
+Give Good MeaningFul Names<br />
+Avoid Long Methods - Apply SLAP<br />
+Comment Why, not What<br />
+Apply Zinsser's Principle on Writing.<br />
+Prefer Clear Code Over Clever Code.<br />
+Avoid Primitive Obsession.<br />
+Program with Intention.<br />
+Favor Loose Coupling<br />
+Favor High Cohesion<br />
+Schedule Time to Lower Technical Debt.<br />
 
 
-# :bulb: Technical Debt
-Track technical debt and pay it back quickly.
-Write a task card or log it in issue tracking system.
+# :bulb: Technical Debt<br />
+Track technical debt and pay it back quickly.<br />
+Write a task card or log it in issue tracking system.<br />
 
 
-# :bulb: Functional Progamming
-Astute test driven design
-Mock roles not objects
+# :bulb: Functional Progamming<br />
+Astute test driven design<br />
+Mock roles not objects<br />
 
 
-# :bulb: Watch Users
-Ask what would the user do? (You are not the user)
-Don't Assume
+# :bulb: Watch Users<br />
+Ask what would the user do? (You are not the user)<br />
+Don't Assume<br />
 
 
-# :bulb: Automate Your Coding Standards
-Make sure code formatting is part of build process.
-Use static code analysis tools to find specific anti patterns.
-Do not only measure test coverage, but automatically check the results.
+# :bulb: Automate Your Coding Standards<br />
+Make sure code formatting is part of build process.<br />
+Use static code analysis tools to find specific anti patterns.<br />
+Do not only measure test coverage, but automatically check the results.<br />
 
 
-# :bulb: Beauty is in Simplicity
-Readability
-Maintainability
-Speed of Development
-The elusive quality Of Beauty.
-No matter How complex the total application or system is, the individual parts have to be kept simple.
-Simple objects with a single responsibility containing similarly simple, focused methods with descriptive names
+# :bulb: Beauty is in Simplicity<br />
+Readability<br />
+Maintainability<br />
+Speed of Development<br />
+The elusive quality Of Beauty.<br />
+No matter How complex the total application or system is, the individual parts have to be kept simple.<br />
+Simple objects with a single responsibility containing similarly simple, focused methods with descriptive names<br />
 
 
-# :bulb: Before You Refactor
-:seedling: Start by taking stock of existing code base.
-:seedling: Avoid the temptation of rewriting everything
-:seedling: Many incremental changes are better than one massive change.
-:seedling: After each development iteration, ensure the existing tests pass.
-:seedling: Personal preferences & ego should't get in way.
-:seedling: New Technology is insufficient reason to refactor.
+# :bulb: Before You Refactor<br />
+:seedling: Start by taking stock of existing code base.<br />
+:seedling: Avoid the temptation of rewriting everything<br />
+:seedling: Many incremental changes are better than one massive change.<br />
+:seedling: After each development iteration, ensure the existing tests pass.<br />
+:seedling: Personal preferences & ego should't get in way.<br />
+:seedling: New Technology is insufficient reason to refactor.<br />
 
 
-# :bulb: Beware the Share
+# :bulb: Beware the Share<br />
 Check your Context Only then proceed.
 
-# :bulb: Boy Scout Rule
-:snowflake: Always check a module in cleaner than when you checked it out.
-:snowflake: Any code you add to the module must be clean.
-:snowflake: Improve name of the variable
-:snowflake: Split One long function into smaller functions.
-:snowflake: Break Circular dependency
-:snowflake: Add an interface to decouple policy from detail.
+# :bulb: Boy Scout Rule<br />
+:snowflake: Always check a module in cleaner than when you checked it out.<br />
+:snowflake: Any code you add to the module must be clean.<br />
+:snowflake: Improve name of the variable<br />
+:snowflake: Split One long function into smaller functions.<br />
+:snowflake: Break Circular dependency<br />
+:snowflake: Add an interface to decouple policy from detail.<br />
 
 
-# :bulb: Check Your Code First Before Looking to blame others
-:zap: Isolate the problem
-:zap: Stub out calls
-:zap: Surround it with tests
-:zap: check calling conventions, shared libraries & version numbers
-:zap: Explain it to someone else
-:zap: look out for stack corruption & variable type mismatch
-:zap: try code on different machines, different build configurations
-:zap: Question your own assumptions & assumptions of others.
+# :bulb: Check Your Code First Before Looking to blame others<br />
+:zap: Isolate the problem<br />
+:zap: Stub out calls<br />
+:zap: Surround it with tests<br />
+:zap: check calling conventions, shared libraries & version numbers<br />
+:zap: Explain it to someone else<br />
+:zap: look out for stack corruption & variable type mismatch<br />
+:zap: try code on different machines, different build configurations<br />
+:zap: Question your own assumptions & assumptions of others.<br />
 
 
-# :bulb: Choose Your Tools With Care
+# :bulb: Choose Your Tools With Care<br />
 Start small by using only the tools which are absolutely necessary.
 
-# :bulb: Code In the launguage of the domain
+# :bulb: Code In the launguage of the domain<br />
 :straight_ruler: Add domian concepts explicit in the code.
 
 
 # :bulb: Code Layout Matters
-:pencil2: Optimizing to where to make change
-:pencil2: Easy to scan - observe conventions about how to lay out the parts of a class within a compilation unit: constants, fields, public methods, private methods
-:pencil2: Expressive layout - Find the right names so that your code express as clearly as possible 
-:pencil2: Compact Format
+:pencil2: Optimizing to where to make change <br />
+:pencil2: Easy to scan - observe conventions about how to lay out the parts of a class within a compilation unit: constants, fields, public methods, private methods<br />
+:pencil2: Expressive layout - Find the right names so that your code express as clearly as possible <br />
+:pencil2: Compact Format<br />
